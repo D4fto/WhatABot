@@ -190,16 +190,15 @@ const client = new Client({
 
 client.on('ready',async () => {
     console.log('Client is ready!');
-    const chats = await client.getChats();
+    // const chats = await client.getChats();
 
-const grupos = chats.filter(chat => chat.isGroup);
+    // const grupos = chats.filter(chat => chat.isGroup);
 
-grupos.forEach(g => {
-   if(g.id._serialized!="120363258121718186@g.us"){
-       console.log(g.name, g.id._serialized);
+    // grupos.forEach(g => {
 
-   }
-});
+    //     console.log(g.name, g.id._serialized);
+    
+    // });
 });
 
 client.on('qr', qr => {
